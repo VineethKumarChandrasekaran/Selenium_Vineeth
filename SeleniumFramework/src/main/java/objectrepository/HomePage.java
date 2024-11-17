@@ -9,19 +9,18 @@ public class HomePage {
 
 	@FindBy(linkText = "Log out")
 	private WebElement logoutButton;
-	
+
 	@FindBy(partialLinkText = "Books")
 	private WebElement booksLink;
-	
+
 	@FindBy(partialLinkText = "Computers")
 	private WebElement computersLink;
-	
+
 	@FindBy(partialLinkText = "Electronics")
 	private WebElement electronicsLink;
-	
+
 	@FindBy(partialLinkText = "Gift Cards")
 	private WebElement giftcardsLink;
-	
 
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -42,9 +41,9 @@ public class HomePage {
 	public WebElement getElectronicsLink() {
 		return electronicsLink;
 	}
-	
+
 	public WebElement getGiftcardsLink() {
 		return giftcardsLink;
 	}
-	
+
 }

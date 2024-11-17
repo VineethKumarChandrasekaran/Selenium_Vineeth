@@ -9,11 +9,11 @@ public class WelcomePage {
 
 	@FindBy(linkText = "Log in")
 	private WebElement loginLink;
-	
+
 	public WelcomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public WebElement getLoginLink() {
 		return loginLink;
 	}
